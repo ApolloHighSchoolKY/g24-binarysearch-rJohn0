@@ -13,19 +13,20 @@ public class BinarySearch
 		{
 			middle = (top + bottom) / 2;
 			
-			if(ray[middle] > item)
-			{
-				top = middle;
-			}
 			if(ray[middle] < item)
 			{
-				bottom = middle; 
+				//dont know how this works, i kind of just remembered you saying something about this and it made my code work so
+				bottom = middle+1; 
 			}
+			if(ray[middle] > item)
+			{
+				top = middle-1;
+			}
+			
 			if(ray[middle] == item)
 			{
 				return middle;
 			}
-			
 		}
 		return -1;
 	}
