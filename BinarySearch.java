@@ -15,11 +15,13 @@ public class BinarySearch
 			
 			if(ray[middle] < item)
 			{
-				//dont know how this works, i kind of just remembered you saying something about this and it made my code work so
+				//dont know how the +1 works, i kind of just remembered you saying something about this and it made my code work so
+				// im assuming it makes it more efficient or soemthing
 				bottom = middle+1; 
 			}
 			if(ray[middle] > item)
 			{
+				//same as other comment 
 				top = middle-1;
 			}
 			
